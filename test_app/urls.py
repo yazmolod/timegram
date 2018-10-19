@@ -1,6 +1,7 @@
-from django.conf.urls import url
+from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
-    url('^$', views.index, name='index'),
+    re_path('^$', views.index, name='index'),
+    path('magic/', views.magic, name='magic')
 ]
