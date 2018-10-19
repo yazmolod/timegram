@@ -1,8 +1,7 @@
 from InstagramAPI import InstagramAPI
 
 ig = InstagramAPI('yazmolod', 'SgAsU2014')
-file_path = 'static/maxresdefault.jpg'
-caption = 'Something happened'
+file_path = 'tmp.jpg'
 
-def DoMagic():
+def DoMagic(caption):
 	ig.uploadPhoto(file_path, caption=caption)
